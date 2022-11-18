@@ -76,14 +76,14 @@ a {
 
 .nav-menu {
   position: fixed;
-  left: -100%;
+  right: -100%;
   top: 70px;
   gap: 0;
   flex-direction: column;
   background-color: black;
   width: 500px;
   text-align: center;
-  transition: 1s;
+  transition: 0.6s;
   opacity: 70%;
   z-index: 100;
 }
@@ -93,7 +93,7 @@ a {
 }
 
 .nav-menu.active {
-  left: 75%;
+  right:0;
 }
 
 /* trying to make logo change color */
