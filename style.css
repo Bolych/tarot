@@ -5,10 +5,6 @@
   font-family: "Handlee", cursive;
 }
 
-.content {
-  min-width: 20%;
-}
-
 /* header */
 
 body {
@@ -114,7 +110,6 @@ a {
 /* prediction place */
 
 #prediction {
-  margin-top: 200px;
   position: flex;
   justify-content: space-between;
   align-items: center;
@@ -140,18 +135,21 @@ a {
   width: 30vh;
   /* height: 350px;
   width: 250px; */
-  margin: 10px;
-  animation-name: moving;
-  transition: 1s;
+  margin: 25px;
 }
 
-@keyframes moving {
-  0% {
-    left: 0;
-  }
-  100% {
-    left: 200px;
-  }
+.text-after-heading {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font: 30px;
+}
+
+.text-after-heading h1 {
+  margin-right: 100px;
+  padding: 30px;
 }
 
 @media (max-width: 768px) {
