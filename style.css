@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* header */
+
+body {
+  background: url("wall.webp") no-repeat center center/cover;
+  height: 2000px;
+}
+
+header {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: black;
+  opacity: 70%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  font-size: 2rem;
+  transition: 3s;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: blue;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color: white;
+}
+
+.hamburger {
+  display: block;
+}
+
+.nav-menu {
+  position: fixed;
+  left: -100%;
+  top: 70px;
+  gap: 0;
+  flex-direction: column;
+  background-color: black;
+  width: 500px;
+  text-align: center;
+  transition: 1s;
+  opacity: 70%;
+  z-index: 100;
+}
+
+.nav-item {
+  margin: 16px 0;
+}
+
+.nav-menu.active {
+  left: 75%;
+}
+
+/* trying to make logo change color */
+.nav-branding.active {
+  color: red;
+  transition: 2.5s;
+}
+
+/* after header */
+
+/* prediction place */
+
+#prediction {
+  margin-top: 200px;
+}
+
+#deck {
+  position: flex;
+  cursor: pointer;
+  height: 175px;
+  width: 125px;
+}
+
+#cards img {
+  cursor: pointer;
+  height: 175px;
+  width: 125px;
+  margin: 10px;
+}
