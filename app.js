@@ -40,11 +40,6 @@ const cardsValue = [
   "WORLD",
 ];
 
-// console.log(cardsValue.length);
-
-let randomCard = cardsValue[Math.floor(Math.random() * cardsValue.length)];
-console.log(randomCard);
-
 const shuffleArray = () => {
   for (let i = cardsValue.length - 1; i > 0; i--) {
     let j = Math.floor(Math.random() * cardsValue.length);
@@ -52,7 +47,10 @@ const shuffleArray = () => {
     cardsValue[i] = cardsValue[j];
     cardsValue[j] = temp;
   }
-  console.log(cardsValue);
+};
+
+window.onload = function () {
+  shuffleArray();
 };
 
 let deck = document.querySelector("#deck");
@@ -62,7 +60,7 @@ let hidden;
 let card;
 
 let addingCard = function () {
-  if (cardsValue.length > 16) {
+  if (cardsValue.length > 14) {
     let cardImg = document.createElement("img");
     let card = cardsValue.pop(0);
     cardImg.src = "./cards/" + card + ".jpg";
@@ -72,31 +70,4 @@ let addingCard = function () {
 
 deck.addEventListener("click", addingCard);
 
-// function stopPrediction() {
-//   if (cardsValue.length == 17) {
-//     console.log("pizdec");
-//   }
-// }
-// stopPrediction();
-
-console.log(cardsValue.length);
-
-// prediction();
-
-// deck.addEventListener("click", () => {
-//   let cardImg = document.createElement("img");
-//   let card = cardsValue.pop(0);
-//   cardImg.src = "./cards/" + card + ".jpg";
-//   table.append(cardImg);
-// });
-
-//   table.append(cardImg);
-// });
-
-// function startReading() {
-//   hidden = cardsValue.pop;
-// }
-
-window.onload = function () {
-  shuffleArray();
-};
+// message after prediction
