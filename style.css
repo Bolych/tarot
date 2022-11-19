@@ -70,7 +70,7 @@ a {
 
 .hamburger {
   cursor: pointer;
-  z-index: 2;
+  z-index: 6;
   display: block;
 }
 
@@ -86,7 +86,7 @@ a {
   text-align: center;
   transition: 1.6s;
   opacity: 0%;
-  z-index: 1;
+  z-index: 5;
   color: white;
 }
 
@@ -237,7 +237,6 @@ a {
   }
 
   .nav-menu {
-    width: 100px;
+    width: 100%;
   }
 }
-
