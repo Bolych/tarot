@@ -81,6 +81,7 @@ let addingCard = function () {
     cardImg.src = "./cards/" + card + ".jpg";
     cardImg.setAttribute("class", "img-appear");
     table.append(cardImg);
+
     setTimeout(function () {
       cardImg.classList.toggle("active");
     }, 0);
@@ -90,12 +91,20 @@ let addingCard = function () {
     setTimeout(function () {
       message.classList.toggle("white");
       content.setAttribute("class", "black");
-    }, 500);
+      confirmQuestion();
+    }, 100);
   }
 };
-
-console.log(message);
 
 deck.addEventListener("click", addingCard);
 
 // message after prediction
+
+let confirmQuestion = function () {
+  setTimeout(function () {
+    if (content.classList.contains("black")) {
+      window.location.replace("next-page.html");
+    }
+  }, 6000);
+};
+
