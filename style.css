@@ -9,10 +9,9 @@
 
 body {
   background-color: black;
-  height: 100vh;
+
   background: url("wall2.jpg");
-  height: 100vh;
-  display: block;
+ background-size: cover;
 }
 
 header {
