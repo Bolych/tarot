@@ -76,17 +76,18 @@ a {
 
 .nav-menu {
   position: fixed;
-  top: 60px;
+  top: 2%;
   visibility: hidden;
   right: 0px;
   gap: 0;
   flex-direction: column;
   background-color: black;
-  width: 300px;
+  width: 100%;
   text-align: center;
   transition: 1.6s;
   opacity: 0%;
-  z-index: 3;
+  z-index: 1;
+  color: white;
 }
 
 .nav-item {
@@ -94,7 +95,7 @@ a {
 }
 
 .nav-menu.active {
-  opacity: 85%;
+  opacity: 98%;
   visibility: visible;
   transition: 1.6s;
 }
@@ -157,6 +158,10 @@ a {
 
 .content {
   display: block;
+  opacity: 0;
+  animation: fade-in 1s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 
 /* after prediction */
@@ -229,6 +234,10 @@ a {
   }
   .text-after-prediction {
     font-size: 18px;
+  }
+
+  .nav-menu {
+    width: 100px;
   }
 }
 
