@@ -5,9 +5,10 @@ const navMenu = document.querySelector(".nav-menu");
 const brandNew = document.querySelector(".nav-branding");
 
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
+
+// color of logo
 
 hamburger.addEventListener("click", () => {
   brandNew.classList.toggle("active");
@@ -15,6 +16,18 @@ hamburger.addEventListener("click", () => {
     brandNew.classList.toggle("active");
   }, 2500);
 });
+
+// closing navbar on clicking outside
+
+document.onclick = function (e) {
+  if (
+    // why exclamations?
+    (!navMenu.contains(e.target) && !hamburger.contains(e.target)) ||
+    close.contains(e.target)
+  ) {
+    navMenu.classList.remove("active");
+  }
+};
 
 // tarot
 
@@ -56,6 +69,8 @@ window.onload = function () {
 let deck = document.querySelector("#deck");
 let result = document.querySelector("#result");
 let table = document.querySelector("#cards");
+let content = document.querySelector(".content");
+let message = document.querySelector(".text-after-prediction");
 let hidden;
 let card;
 
@@ -64,9 +79,22 @@ let addingCard = function () {
     let cardImg = document.createElement("img");
     let card = cardsValue.pop(0);
     cardImg.src = "./cards/" + card + ".jpg";
+    cardImg.setAttribute("class", "img-appear");
     table.append(cardImg);
+    setTimeout(function () {
+      cardImg.classList.toggle("active");
+    }, 0);
+  }
+
+  if (cardsValue.length == 14) {
+    setTimeout(function () {
+      message.classList.toggle("white");
+      content.setAttribute("class", "black");
+    }, 500);
   }
 };
+
+console.log(message);
 
 deck.addEventListener("click", addingCard);
 
