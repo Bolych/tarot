@@ -8,17 +8,18 @@
 /* header */
 
 body {
-  background: url("wall.webp") no-repeat center center/cover;
+  background-color: black;
+
   height: 100vh;
 }
 
 header {
-  z-index: 900;
+  z-index: 2;
   position: fixed;
   top: 0;
   width: 100%;
   background-color: black;
-  opacity: 70%;
+  opacity: 85%;
 }
 
 li {
@@ -48,7 +49,7 @@ a {
 .nav-branding {
   font-size: 2rem;
   transition: 3s;
-  z-index: 5000;
+  z-index: 3;
 }
 
 .nav-link {
@@ -57,11 +58,6 @@ a {
 
 .nav-link:hover {
   color: blue;
-}
-
-.hamburger {
-  display: none;
-  cursor: pointer;
 }
 
 .bar {
@@ -73,22 +69,24 @@ a {
 }
 
 .hamburger {
-  z-index: 9999;
+  cursor: pointer;
+  z-index: 2;
   display: block;
 }
 
 .nav-menu {
   position: fixed;
-  top: -200px;
+  top: 60px;
+  visibility: hidden;
   right: 0px;
   gap: 0;
   flex-direction: column;
   background-color: black;
   width: 300px;
   text-align: center;
-  transition: 0.6s;
-  opacity: 70%;
-  z-index: 100;
+  transition: 1.6s;
+  opacity: 0%;
+  z-index: 3;
 }
 
 .nav-item {
@@ -96,7 +94,9 @@ a {
 }
 
 .nav-menu.active {
-  top: 60px;
+  opacity: 85%;
+  visibility: visible;
+  transition: 1.6s;
 }
 
 /*logo change color */
@@ -105,9 +105,25 @@ a {
   transition: 2.5s;
 }
 
-/* after header */
-
 /* prediction place */
+
+#cards {
+  margin-top: 100px;
+  background: url("wall.webp") no-repeat center center/cover;
+  object-fit: cover;
+}
+
+/* cards to slowly fade in */
+
+.img-appear {
+  opacity: 20%;
+  transition: 2s;
+}
+
+.img-appear.active {
+  opacity: 100%;
+  transition: 2s;
+}
 
 #prediction {
   position: flex;
@@ -123,7 +139,6 @@ a {
   transition: 1s;
   justify-content: space-between;
   align-items: center;
-  animation-name: moving;
 }
 
 #cards img {
@@ -131,38 +146,89 @@ a {
   align-items: center;
   top: 190px;
   cursor: pointer;
-  height: 40vh;
-  width: 30vh;
+  height: 37vh;
+  width: 28vh;
   /* height: 350px;
   width: 250px; */
   margin: 25px;
 }
 
-.text-after-heading {
+/* black screens */
+
+.content {
+  display: block;
+}
+
+/* after prediction */
+
+.text-after-prediction {
   margin-top: 100px;
+  color: white;
+  font-size: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font: 30px;
+  z-index: 5;
+  opacity: 0;
+  position: relative;
 }
 
-.text-after-heading h1 {
-  margin-right: 100px;
-  padding: 30px;
+/* animations */
+
+.white {
+  animation: fade-in 1s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 0.2s;
 }
+
+.black {
+  animation: fade-out 2.5s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 4.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* adaptations */
 
 @media (max-width: 768px) {
   #cards img {
     height: 20vh;
     width: 15vh;
   }
+  .text-after-prediction {
+    font-size: 18px;
+  }
+
+  .content {
+    height: 90vh;
+  }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
   #cards img {
     height: 17vh;
     width: 11.5vh;
-     margin: 10px;
+    margin: 10px;
+  }
+  .text-after-prediction {
+    font-size: 18px;
   }
 }
+
