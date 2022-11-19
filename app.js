@@ -75,6 +75,11 @@ let hidden;
 let card;
 
 let addingCard = function () {
+   if (cardsValue.length == 17) {
+    setTimeout(function () {
+      message.classList.toggle("white");
+    }, 0);
+  }
   if (cardsValue.length > 14) {
     let cardImg = document.createElement("img");
     let card = cardsValue.pop(0);
@@ -89,7 +94,6 @@ let addingCard = function () {
 
   if (cardsValue.length == 14) {
     setTimeout(function () {
-      message.classList.toggle("white");
       content.setAttribute("class", "black");
       confirmQuestion();
     }, 100);
