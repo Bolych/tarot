@@ -189,7 +189,7 @@ a {
 .black {
   animation: fade-out 2.5s ease-in;
   animation-fill-mode: forwards;
-  animation-delay: 4.5s;
+  animation-delay: 2.5s;
 }
 
 @keyframes fade-in {
