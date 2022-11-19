@@ -9,8 +9,10 @@
 
 body {
   background-color: black;
-
   height: 100vh;
+  background: url("wall2.jpg");
+  height: 100vh;
+  display: block;
 }
 
 header {
@@ -110,8 +112,6 @@ a {
 
 #cards {
   margin-top: 100px;
-  background: url("wall.webp") no-repeat center center/cover;
-  object-fit: cover;
 }
 
 /* cards to slowly fade in */
@@ -157,7 +157,6 @@ a {
 /* black screens */
 
 .content {
-  display: block;
   opacity: 0;
   animation: fade-in 1s ease-in;
   animation-fill-mode: forwards;
