@@ -75,7 +75,7 @@ let hidden;
 let card;
 
 let addingCard = function () {
-  if (cardsValue.length == 17) {
+  if (cardsValue.length == 15) {
     setTimeout(function () {
       message.classList.toggle("white");
     }, 0);
