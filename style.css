@@ -9,9 +9,9 @@
 
 body {
   background-color: black;
-
   background: url("wall2.jpg");
- background-size: cover;
+  background-size: cover;
+  /* height: 100vh; */
 }
 
 header {
@@ -148,8 +148,6 @@ a {
   cursor: pointer;
   height: 37vh;
   width: 28vh;
-  /* height: 350px;
-  width: 250px; */
   margin: 25px;
 }
 
@@ -165,15 +163,145 @@ a {
 /* after prediction */
 
 .text-after-prediction {
-  margin-top: 100px;
+  margin-top: 3.5rem;
   color: white;
-  font-size: 100px;
+  font-size: 4rem;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 5;
   opacity: 0;
   position: relative;
+}
+
+#yes-tarot {
+  margin: 0 50px;
+  min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: rgb(135, 30, 30);
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#no-tarot {
+  margin: 0 50px;
+  min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #2b3b5c;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* numerology */
+
+#numerology {
+  margin-top: 10px;
+  display: none;
+  /* display: block; */
+}
+
+.show {
+  display: block !important;
+}
+
+#numerology-table {
+  width: 80%;
+  margin: auto;
+  font-size: 3rem;
+  color: white;
+}
+
+.numerology-name-field {
+  margin-top: 1.5em;
+  display: grid;
+
+  grid-template-columns: 50% 25% 25%;
+  justify-items: center;
+  /* grid-template-columns: repeat(auto-fill, 100vh); */
+}
+
+.numerology-result {
+  color: white;
+  font-size: 1.8rem;
+}
+
+#numerology-table-name {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+  width: 80%;
+}
+
+.big-number {
+  font-size: 1.4rem;
+  color: #ffffff;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #d9d9d9;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 100px;
+  background: #ac2024;
+  padding: 3px 11px;
+}
+
+#numerology-table-name td {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+}
+
+.center-bold {
+  text-align: center;
+}
+
+#numerology-question {
+  margin-top: 10px;
+  color: white;
+  font-size: 4rem;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#text-after-question {
+  color: white;
+  font-size: 2.5rem;
+  opacity: 0;
+  margin-left: 60%;
+  margin-bottom: 25px;
+}
+
+/* colors */
+
+.red {
+  background: #b21c21;
+}
+
+.gold {
+  background: goldenrod;
+}
+
+.green {
+  background: rgb(36, 120, 36);
+}
+
+.orange {
+  background: orangered;
+}
+
+.blue {
+  background: rgb(66, 66, 165);
 }
 
 /* animations */
@@ -215,26 +343,29 @@ a {
     height: 20vh;
     width: 15vh;
   }
-  .text-after-prediction {
-    font-size: 18px;
-  }
 
   .content {
     height: 90vh;
   }
-}
 
-@media (max-width: 480px) {
-  #cards img {
-    height: 17vh;
-    width: 11.5vh;
-    margin: 10px;
-  }
-  .text-after-prediction {
-    font-size: 18px;
+  .numerology-name-field {
+    flex-direction: column;
   }
 
-  .nav-menu {
-    width: 100%;
+  @media (max-width: 480px) {
+    #cards img {
+      height: 17vh;
+      width: 11.5vh;
+      margin: 10px;
+    }
+
+    .nav-menu {
+      width: 100%;
+    }
+
+    #numerology-result {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
