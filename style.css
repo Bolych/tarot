@@ -246,7 +246,7 @@ a {
 }
 
 .numerology-name-field {
-  padding: 4rem;
+  /* padding: 4rem; */
   margin-bottom: 3rem;
   margin-top: 1.5em;
   display: grid;
@@ -263,10 +263,10 @@ a {
 }
 
 #numerology-table-name {
+  width: 95%;
   font-size: 2rem;
   color: white;
   text-align: center;
-  width: 80%;
   max-height: 14px;
   align-items: center;
 }
