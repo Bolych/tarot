@@ -79,7 +79,7 @@ a {
 
 .nav-menu {
   position: fixed;
-  top: 2%;
+  top: 0;
   visibility: hidden;
   right: 0px;
   gap: 0;
