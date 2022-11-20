@@ -110,7 +110,7 @@ let numerologyTable = document.getElementById("numerology-table");
 function numerologyAppear() {
   numerology.classList.add("show");
 
-  numerologyTable.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  numerologyTable.scrollIntoView({ behavior: "smooth", block: "start" });
   message.classList.toggle("white");
   setTimeout(function () {
     numerologyQuestion.classList.toggle("white");
