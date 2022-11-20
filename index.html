@@ -18,20 +18,29 @@
     <div class="content">
       <header>
         <nav class="navbar">
-          <a href="#" class="nav-branding">Alex's Bolych Tarot</a>
+          <a href="index.html" class="nav-branding"
+            >Alex's Bolych Magic Experince</a
+          >
 
           <ul class="nav-menu">
             <li class="nav-item">
-              <a href="https://learn.javascript.ru/" class="nav-link">Учи js</a>
-            </li>
-            <li class="nav-item">
               <a href="https://learn.javascript.ru/" class="nav-link"
-                >Внатуре учи</a
+                >About Tarot</a
               >
             </li>
             <li class="nav-item">
               <a href="https://learn.javascript.ru/" class="nav-link"
-                >Я не шучу учи</a
+                >About Numerology</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="https://learn.javascript.ru/" class="nav-link"
+                >About Palm Reading</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="https://learn.javascript.ru/" class="nav-link"
+                >About Alex Bolych</a
               >
             </li>
           </ul>
@@ -49,11 +58,132 @@
       <div id="prediction">
         <div id="cards">
           <img id="deck" src="backside.jpg" alt="" />
-          <!-- <img id="result" src="CHARIOT.jpg" alt="" /> -->
         </div>
       </div>
-      <div class="text-after-prediction">Do you know what it could mean?</div>
+      <div class="text-after-prediction">
+        <h7>Want to know more about this?</h7>
+        <div class="confirm">
+          <button id="yes-tarot">yes</button>
+          <button id="no-tarot">no</button>
+        </div>
+      </div>
+
+      <div id="numerology">
+        <table id="numerology-table">
+          <tbody>
+            <tr id="numerology-table-top-row">
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+              <td>4</td>
+              <td>5</td>
+              <td>6</td>
+              <td>7</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>B</td>
+              <td>C</td>
+              <td>D</td>
+              <td>E</td>
+              <td>U</td>
+              <td>O</td>
+              <td>F</td>
+            </tr>
+            <tr>
+              <td>I</td>
+              <td>K</td>
+              <td>G</td>
+              <td>M</td>
+              <td>H</td>
+              <td>V</td>
+              <td>Z</td>
+              <td>P</td>
+            </tr>
+            <tr>
+              <td>J</td>
+              <td>R</td>
+              <td>L</td>
+              <td>T</td>
+              <td>N</td>
+              <td>W</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Q</td>
+              <td></td>
+              <td>S</td>
+              <td></td>
+              <td>X</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>Y</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <span id="numerology-question"><h6>Or maybe about this?</h6></span>
+        <span id="text-after-question">or even more...</span>
+        <div class="numerology-name-field">
+          <table id="numerology-table-name">
+            <tbody>
+              <tr>
+                <td>j</td>
+                <td>o</td>
+                <td>h</td>
+                <td>n</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>7</td>
+                <td>5</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="tablee">
+            <table class="numerology-result">
+              <tbody>
+                <tr>
+                  <td>Destiny number <b class="big-number gold">9</b></td>
+                </tr>
+                <!-- <tr>
+                  <td>Soul urge number?? <b class="big-number green">7</b></td>
+                </tr> -->
+                <tr>
+                  <td>Dream number <b class="big-number blue">11</b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="tablee">
+            <table class="numerology-result">
+              <tbody>
+                <!-- <tr>
+                  <td>Personality number <b class="big-number orange">5</b></td>
+                </tr> -->
+                <tr>
+                  <td>Heart desire number <b class="big-number red">7</b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
     </div>
+    <br /><br />
     <script src="app.js"></script>
   </body>
 </html>
