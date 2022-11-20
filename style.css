@@ -163,9 +163,9 @@ a {
 /* after prediction */
 
 .text-after-prediction {
-  margin-top: 3.5em;
+  margin-top: 2em;
   color: white;
-  font-size: 4em;
+  font-size: 3em;
   display: flex;
   flex-direction: column;
   justify-content: center;
