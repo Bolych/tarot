@@ -107,6 +107,11 @@ a {
   transition: 2.5s;
 }
 
+/* .red {
+  color: red;
+  transition: 2.5s;
+} */
+
 /* prediction place */
 
 #cards {
@@ -163,16 +168,15 @@ a {
 /* after prediction */
 
 .text-after-prediction {
-  margin-top: 2em;
+  margin-top: 2rem;
   color: white;
-  font-size: 3em;
+  font-size: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 5;
   opacity: 0;
-  position: relative;
 }
 
 #yes-tarot {
@@ -207,19 +211,19 @@ a {
 
 #numerology {
   margin-top: 10px;
-  display: none;
-  /* display: block; */
+  visibility: hidden;
 }
 
 .show {
-  display: block !important;
+  visibility: visible !important;
 }
 
 #numerology-table {
-  width: 80%;
-  margin: auto;
-  font-size: 3rem;
+  width: 70%;
+  font-size: 2em;
   color: white;
+  max-height: 20%;
+  margin: auto;
 }
 
 .numerology-name-field {
@@ -282,6 +286,12 @@ a {
   margin-bottom: 25px;
 }
 
+#btn-main {
+  padding: 0.5rem;
+  animation: painting-red 4s infinite ease;
+  font-size: 2.8rem;
+}
+
 /* colors */
 
 .red {
@@ -333,6 +343,18 @@ a {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@keyframes painting-red {
+  0% {
+    color: white;
+  }
+  50% {
+    color: red;
+  }
+  100% {
+    color: white;
   }
 }
 
