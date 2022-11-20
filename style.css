@@ -9,11 +9,20 @@
 
 body {
   background-color: black;
-  background: url("wall2.jpg");
-  background-size: cover;
+
   color: white;
   /* height: 100vh; */
 }
+
+.tarot {
+  padding-bottom: 3rem;
+  background: url("darkforest.jpg");
+  background-size: cover;
+}
+
+/* .tarot {
+  
+} */
 
 header {
   margin-bottom: 50px;
@@ -75,6 +84,11 @@ a {
   cursor: pointer;
   z-index: 6;
   display: block;
+}
+
+.confirm {
+  display: flex;
+  white-space: nowrap;
 }
 
 .nav-menu {
@@ -181,11 +195,6 @@ a {
   opacity: 0;
 }
 
-.confirm {
-  display: flex;
-  white-space: nowrap;
-}
-
 #yes-tarot {
   margin: 0 50px;
   min-width: 100px;
@@ -217,8 +226,10 @@ a {
 /* numerology */
 
 #numerology {
-  margin-top: 10px;
+  margin-top: 5rem;
   visibility: hidden;
+  background: url("forest.webp");
+  background-size: cover;
 }
 
 .show {
@@ -226,6 +237,7 @@ a {
 }
 
 #numerology-table {
+  padding: 3rem 4rem 0 4rem;
   width: 70%;
   font-size: 2em;
   color: white;
@@ -234,11 +246,14 @@ a {
 }
 
 .numerology-name-field {
+  padding: 4rem;
+  margin-bottom: 3rem;
   margin-top: 1.5em;
   display: grid;
 
   grid-template-columns: 50% 25% 25%;
   justify-items: center;
+  align-items: center;
   /* grid-template-columns: repeat(auto-fill, 100vh); */
 }
 
@@ -252,6 +267,8 @@ a {
   color: white;
   text-align: center;
   width: 80%;
+  max-height: 14px;
+  align-items: center;
 }
 
 .big-number {
