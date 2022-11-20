@@ -181,6 +181,11 @@ a {
   opacity: 0;
 }
 
+.confirm {
+  display: flex;
+  white-space: nowrap;
+}
+
 #yes-tarot {
   margin: 0 50px;
   min-width: 100px;
