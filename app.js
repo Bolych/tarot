@@ -101,12 +101,16 @@ let btnYes = document.getElementById("yes-tarot");
 let btnNo = document.getElementById("no-tarot");
 let numerologyQuestion = document.getElementById("numerology-question");
 let textAfterQuestion = document.getElementById("text-after-question");
+let btnMain = document.getElementById("btn-main");
 
 let numerology = document.getElementById("numerology");
 
+let numerologyTable = document.getElementById("numerology-table");
+
 function numerologyAppear() {
   numerology.classList.add("show");
-  window.scrollTo(0, document.body.scrollHeight);
+
+  numerologyTable.scrollIntoView({ behavior: "smooth", block: "center" });
   message.classList.toggle("white");
   setTimeout(function () {
     numerologyQuestion.classList.toggle("white");
