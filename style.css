@@ -11,10 +11,12 @@ body {
   background-color: black;
   background: url("wall2.jpg");
   background-size: cover;
+  color: white;
   /* height: 100vh; */
 }
 
 header {
+  margin-bottom: 50px;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -160,9 +162,9 @@ a {
 
 .content {
   opacity: 0;
-  animation: fade-in 1s ease-in;
+  animation: fade-in 0.5s ease-in;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  /* animation-delay: 0.5s; */
 }
 
 /* after prediction */
