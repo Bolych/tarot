@@ -75,7 +75,7 @@ let hidden;
 let card;
 
 let addingCard = function () {
-   if (cardsValue.length == 17) {
+  if (cardsValue.length == 17) {
     setTimeout(function () {
       message.classList.toggle("white");
     }, 0);
@@ -91,24 +91,36 @@ let addingCard = function () {
       cardImg.classList.toggle("active");
     }, 0);
   }
-
-  if (cardsValue.length == 14) {
-    setTimeout(function () {
-      content.setAttribute("class", "black");
-      confirmQuestion();
-    }, 100);
-  }
 };
 
 deck.addEventListener("click", addingCard);
 
-// message after prediction
+// numerology
 
-let confirmQuestion = function () {
+let btnYes = document.getElementById("yes-tarot");
+let btnNo = document.getElementById("no-tarot");
+let numerologyQuestion = document.getElementById("numerology-question");
+let textAfterQuestion = document.getElementById("text-after-question");
+
+let numerology = document.getElementById("numerology");
+
+function numerologyAppear() {
+  numerology.classList.add("show");
+  window.scrollTo(0, document.body.scrollHeight);
+  message.classList.toggle("white");
   setTimeout(function () {
-    if (content.classList.contains("black")) {
-      window.location.replace("next-page.html");
-    }
-  }, 6000);
-};
+    numerologyQuestion.classList.toggle("white");
+  }, 1000);
+  setTimeout(function () {
+    textAfterQuestion.classList.toggle("white");
+  }, 4000);
+}
+
+console.log(numerology);
+
+btnYes.addEventListener("click", numerologyAppear);
+btnNo.addEventListener("click", numerologyAppear);
+
+// console.log(btnNo);
+// console.log(btnYes);
 
