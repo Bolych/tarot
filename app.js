@@ -71,10 +71,12 @@ let result = document.querySelector("#result");
 let table = document.querySelector("#cards");
 let content = document.querySelector(".content");
 let message = document.querySelector(".text-after-prediction");
+let pushMessage = document.getElementById("push");
 let hidden;
 let card;
 
 let addingCard = function () {
+  pushMessage.remove();
   if (cardsValue.length == 15) {
     setTimeout(function () {
       message.classList.toggle("white");
@@ -128,3 +130,4 @@ btnNo.addEventListener("click", numerologyAppear);
 
 // console.log(btnNo);
 // console.log(btnYes);
+console.log(pushMessage);
