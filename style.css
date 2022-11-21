@@ -131,9 +131,21 @@ a {
   transition: 2s;
 }
 
-/* #cards {
-  margin-top: 1000px;
-} */
+#push {
+  animation: painting-red 4s infinite ease;
+  margin: auto;
+  font-size: 2em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+#cards {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
 * #prediction {
   margin-top: 90px;
   padding-bottom: 3rem;
@@ -152,7 +164,7 @@ a {
   cursor: pointer;
   height: 37vh;
   width: 28vh;
-  margin: 50px 23px 0 23px;
+  margin: 50px 25px 0 25px;
 }
 
 /* black screens */
@@ -210,7 +222,8 @@ a {
 #numerology {
   margin-top: 5rem;
   padding-bottom: 2rem;
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   background: rgba(0, 0, 0, 0.379);
   border-width: 2px;
   border-style: solid;
@@ -218,7 +231,8 @@ a {
 }
 
 .show {
-  visibility: visible !important;
+  /* visibility: visible !important; */
+  display: block !important;
 }
 
 #numerology-table {
