@@ -104,27 +104,27 @@ let textAfterQuestion = document.getElementById("text-after-question");
 let btnMain = document.getElementById("btn-main");
 
 let numerology = document.getElementById("numerology");
-
 let numerologyTable = document.getElementById("numerology-table");
+let numerologyTableName = document.getElementById("numerology-table-name");
 
 function numerologyAppear() {
   numerology.classList.add("show");
 
-  numerologyTable.scrollIntoView({ behavior: "smooth", block: "start" });
+  numerologyTableName.scrollIntoView({
+    block: "start",
+    behavior: "smooth",
+  });
   message.classList.toggle("white");
   setTimeout(function () {
     numerologyQuestion.classList.toggle("white");
-  }, 1000);
+  }, 700);
   setTimeout(function () {
     textAfterQuestion.classList.toggle("white");
-  }, 4000);
+  }, 2000);
 }
-
-console.log(numerology);
 
 btnYes.addEventListener("click", numerologyAppear);
 btnNo.addEventListener("click", numerologyAppear);
 
 // console.log(btnNo);
 // console.log(btnYes);
-
