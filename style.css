@@ -236,7 +236,7 @@ a {
 }
 
 #numerology-table {
-  padding: 3rem 0rem 0 4rem;
+    padding-top: 2rem;
   width: 70%;
   font-size: 2em;
   color: white;
