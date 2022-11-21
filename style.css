@@ -8,24 +8,16 @@
 /* header */
 
 body {
-  background-color: black;
+  /* background: black !important; */
+  background: url("space.jpg");
+  background-size: cover no-repeat;
 
   color: white;
-  /* height: 100vh; */
+  height: 100vh;
 }
-
-.tarot {
-  padding-bottom: 3rem;
-  background: url("darkforest.jpg");
-  background-size: cover;
-}
-
-/* .tarot {
-  
-} */
 
 header {
-  margin-bottom: 50px;
+  margin-bottom: 0;
   z-index: 2;
   position: fixed;
   top: 0;
@@ -123,16 +115,9 @@ a {
   transition: 2.5s;
 }
 
-/* .red {
-  color: red;
-  transition: 2.5s;
-} */
-
 /* prediction place */
+/* 
 
-#cards {
-  margin-top: 100px;
-}
 
 /* cards to slowly fade in */
 
@@ -146,30 +131,28 @@ a {
   transition: 2s;
 }
 
-#prediction {
-  position: flex;
-  justify-content: space-between;
-  align-items: center;
+/* #cards {
+  margin-top: 1000px;
+} */
+* #prediction {
+  margin-top: 90px;
+  padding-bottom: 3rem;
 }
 
 #deck {
-  position: flex;
+  /* margin-top: 1000px; */
+
   cursor: pointer;
   height: 40vh;
   width: 30vh;
   transition: 1s;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #cards img {
-  justify-content: space-between;
-  align-items: center;
-  top: 190px;
   cursor: pointer;
   height: 37vh;
   width: 28vh;
-  margin: 25px;
+  margin: 50px 23px 0 23px;
 }
 
 /* black screens */
@@ -178,7 +161,6 @@ a {
   opacity: 0;
   animation: fade-in 0.5s ease-in;
   animation-fill-mode: forwards;
-  /* animation-delay: 0.5s; */
 }
 
 /* after prediction */
@@ -227,9 +209,12 @@ a {
 
 #numerology {
   margin-top: 5rem;
+  padding-bottom: 2rem;
   visibility: hidden;
-  background: url("forest.webp");
-  background-size: cover;
+  background: rgba(0, 0, 0, 0.379);
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.307);
 }
 
 .show {
