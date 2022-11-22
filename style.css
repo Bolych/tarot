@@ -232,11 +232,13 @@ a {
 
 #numerology {
   display: none;
+    box-sizing: border-box;
 }
 
 .show {
   display: block !important;
     width: 100vw !important;
+ 
 }
 
 .carousel-slide {
