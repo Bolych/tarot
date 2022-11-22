@@ -18,10 +18,9 @@ body {
   color: white;
 }
 
-/* .content {
-  background: url("space.jpg");
-  background-size: cover no-repeat;
-} */
+.content {
+  width: 100vw;
+}
 
 /* .tarot {
   background: url("space.jpg");
