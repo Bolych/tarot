@@ -434,14 +434,11 @@ a {
     flex-direction: column;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 500px) {
     #cards img {
       height: 8rem;
       width: 6rem;
-      margin: 10px;
-      /* height: 17vh;
-      width: 11.5vh;
-      margin: 10px; */
+      margin: 0.6rem;
     }
 
     .nav-branding {
