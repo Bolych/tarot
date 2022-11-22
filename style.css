@@ -451,6 +451,14 @@ a {
       margin: 10px;
     }
     
+     #cards img {
+      height: 40vh;
+      width: 31vh;
+      margin: 50px 25px 0 25px;
+      padding: 0.5rem;
+    }
+
+    
      .carousel-slide img {
       width: 30vw;
     }
