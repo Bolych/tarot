@@ -232,6 +232,7 @@ a {
 
 #numerology {
   display: none;
+  width: 100%;
 }
 
 .show {
@@ -449,6 +450,10 @@ a {
       width: 11.5vh;
       margin: 10px;
     }
+    
+     .nav-branding {
+    font-size: 3vh;
+  }
 
     .nav-menu {
       width: 100%;
