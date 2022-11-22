@@ -451,6 +451,10 @@ a {
       margin: 10px;
     }
     
+     .carousel-slide img {
+      width: 30vw;
+    }
+    
      .nav-branding {
     font-size: 3vh;
   }
