@@ -438,7 +438,7 @@ a {
     #cards img {
       height: 8rem;
       width: 6rem;
-      margin: 0.6rem;
+      margin: 0.75rem;
     }
 
     .nav-branding {
@@ -456,5 +456,13 @@ a {
       display: flex;
       flex-direction: column;
     }
+  }
+}
+
+@media (max-width: 440px) {
+  #cards img {
+    height: 8rem;
+    width: 6rem;
+    margin: 0.55rem;
   }
 }
