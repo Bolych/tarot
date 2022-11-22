@@ -92,7 +92,7 @@ a {
 
 .nav-menu {
   position: fixed;
-
+top: 60px;
   visibility: hidden;
 
   flex-direction: column;
