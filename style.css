@@ -426,10 +426,11 @@ a {
 
 /* adaptations */
 
+
 @media (max-width: 768px) {
   #cards img {
-    height: 20vh;
-    width: 15vh;
+    height: 12rem;
+    width: 10rem;
   }
 
   .nav-branding {
@@ -446,20 +447,19 @@ a {
 
   @media (max-width: 480px) {
     #cards img {
-      height: 18vh;
-      width: 12.5vh;
-      margin: 10px;
-      padding: 0.5vh;
+      height: 8rem;
+      width: 6rem;
+      /* height: 17vh;
+      width: 11.5vh;
+      margin: 10px; */
     }
 
-    
-     .carousel-slide img {
+    .nav-branding {
+      font-size: 3vh;
+    }
+    .carousel-slide img {
       width: 30vw;
     }
-    
-     .nav-branding {
-    font-size: 3vh;
-  }
 
     .nav-menu {
       width: 100%;
