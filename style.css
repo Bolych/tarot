@@ -22,13 +22,7 @@ body {
   width: 100vw;
 }
 
-/* .tarot {
-  background: url("space.jpg");
-  background-size: cover no-repeat;
-} */
-
 header {
-  /* margin-bottom: 0; */
   z-index: 2;
   position: fixed;
   top: 0;
@@ -58,7 +52,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* gap: 60px; */
 }
 
 .nav-branding {
@@ -93,16 +86,15 @@ a {
 
 .confirm {
   display: flex;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   padding: 1rem;
 }
 
 .nav-menu {
   position: fixed;
-  top: 0;
+
   visibility: hidden;
-  right: 0px;
-  gap: 0;
+
   flex-direction: column;
   background-color: black;
   width: 100%;
@@ -158,7 +150,7 @@ a {
   flex-wrap: wrap;
 }
 
-* #prediction {
+#prediction {
   margin-top: 90px;
   padding-bottom: 3rem;
 }
@@ -171,7 +163,6 @@ a {
 }
 
 #cards img {
-  cursor: pointer;
   height: 37vh;
   width: 28vh;
   margin: 50px 25px 0 25px;
@@ -231,13 +222,11 @@ a {
 
 #numerology {
   display: none;
-    box-sizing: border-box;
 }
 
 .show {
   display: block !important;
-    width: 100vw !important;
- 
+  width: 100vw !important;
 }
 
 .carousel-slide {
@@ -252,7 +241,7 @@ a {
 
 .carousel-slide img {
   position: relative;
-  max-width: 20vw;
+  width: 20vw;
 }
 
 .numerology-name-field {
@@ -427,7 +416,6 @@ a {
 
 /* adaptations */
 
-
 @media (max-width: 768px) {
   #cards img {
     height: 12rem;
@@ -450,6 +438,7 @@ a {
     #cards img {
       height: 8rem;
       width: 6rem;
+      margin: 10px;
       /* height: 17vh;
       width: 11.5vh;
       margin: 10px; */
