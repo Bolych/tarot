@@ -446,16 +446,10 @@ a {
 
   @media (max-width: 480px) {
     #cards img {
-      height: 17vh;
-      width: 11.5vh;
+      height: 18vh;
+      width: 12.5vh;
       margin: 10px;
-    }
-    
-     #cards img {
-      height: 40vh;
-      width: 31vh;
-      margin: 50px 25px 0 25px;
-      padding: 0.5rem;
+      padding: 0.5vh;
     }
 
     
