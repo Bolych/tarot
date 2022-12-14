@@ -21,7 +21,6 @@ hamburger.addEventListener("click", () => {
 
 document.onclick = function (e) {
   if (
-    // why exclamations?
     (!navMenu.contains(e.target) && !hamburger.contains(e.target)) ||
     close.contains(e.target)
   ) {
@@ -103,6 +102,7 @@ let btnYes = document.getElementById("yes-tarot");
 let btnNo = document.getElementById("no-tarot");
 let numerologyQuestion = document.getElementById("numerology-question");
 let textAfterQuestion = document.getElementById("text-after-question");
+let endConfirmQuestion = document.querySelector(".confirm-end");
 let btnMain = document.getElementById("btn-main");
 
 let numerology = document.getElementById("numerology");
@@ -123,9 +123,12 @@ function numerologyAppear() {
   setTimeout(function () {
     textAfterQuestion.classList.toggle("white");
   }, 1500);
+  setTimeout(function () {
+    endConfirmQuestion.classList.add("white");
+  }, 2500);
 }
 
-btnYes.addEventListener("click", numerologyAppear);
+// btnYes.addEventListener("click", numerologyAppear);
 btnNo.addEventListener("click", numerologyAppear);
 
 // carousel
