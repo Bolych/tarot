@@ -392,7 +392,6 @@ a {
   text-align: center;
   justify-content: center;
   flex-direction: column;
-  padding: 1em;
   margin-top: 3em;
   font-size: 2em;
 }
@@ -453,6 +452,10 @@ a {
     font-size: 2rem;
   }
 
+  .container-temporary {
+    margin-top: 0rem;
+  }
+
   .content {
     height: 90vh;
   }
@@ -466,6 +469,10 @@ a {
       height: 8rem;
       width: 6rem;
       margin: 0.75rem;
+    }
+
+    .container-temporary {
+      margin-top: 0rem;
     }
 
     .nav-branding {
@@ -491,5 +498,9 @@ a {
     height: 8rem;
     width: 6rem;
     margin: 0.55rem;
+  }
+
+  .container-temporary {
+    margin-top: 0rem;
   }
 }
