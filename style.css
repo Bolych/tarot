@@ -453,9 +453,12 @@ a {
   }
 
   .container-temporary {
-    margin-top: 1em;
-    top: 1em;
-    position: absolute;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: -22em;
+    font-size: 2em;
   }
 
   .content {
@@ -471,12 +474,6 @@ a {
       height: 8rem;
       width: 6rem;
       margin: 0.75rem;
-    }
-
-    .container-temporary {
-      margin-top: 1em;
-      top: 1em;
-      position: absolute;
     }
 
     .nav-branding {
@@ -503,10 +500,5 @@ a {
     width: 6rem;
     margin: 0.55rem;
   }
-
-  .container-temporary {
-    margin-top: 1em;
-    top: 1em;
-    position: absolute;
-  }
 }
+
