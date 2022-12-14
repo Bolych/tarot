@@ -453,7 +453,8 @@ a {
   }
 
   .container-temporary {
-    margin-top: 0rem;
+    top: 1em;
+    position: absolute;
   }
 
   .content {
@@ -472,7 +473,8 @@ a {
     }
 
     .container-temporary {
-      margin-top: 0rem;
+      top: 1em;
+      position: absolute;
     }
 
     .nav-branding {
@@ -501,6 +503,7 @@ a {
   }
 
   .container-temporary {
-    margin-top: 0rem;
+    top: 1em;
+    position: absolute;
   }
 }
