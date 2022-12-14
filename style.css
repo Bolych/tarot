@@ -453,6 +453,7 @@ a {
   }
 
   .container-temporary {
+    margin-top: 1em;
     top: 1em;
     position: absolute;
   }
@@ -473,6 +474,7 @@ a {
     }
 
     .container-temporary {
+      margin-top: 1em;
       top: 1em;
       position: absolute;
     }
@@ -503,6 +505,7 @@ a {
   }
 
   .container-temporary {
+    margin-top: 1em;
     top: 1em;
     position: absolute;
   }
