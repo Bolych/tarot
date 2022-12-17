@@ -99,9 +99,8 @@ a {
 
 .nav-menu {
   position: fixed;
-  top: 3.2em;
+  top: 2.8em;
   visibility: hidden;
-
   flex-direction: column;
   background-color: black;
   width: 100%;
@@ -498,7 +497,7 @@ a {
     }
 
     .nav-branding {
-      font-size: 3vh;
+      font-size: 2.6vh;
     }
     .carousel-slide img {
       width: 30vw;
