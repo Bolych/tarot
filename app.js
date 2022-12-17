@@ -153,7 +153,7 @@ endBtn.addEventListener("click", () => {
 
   setTimeout(function () {
     window.location.href = "http://google.com";
-  }, 3500);
+  }, 2500);
 });
 
 // carousel
