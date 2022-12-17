@@ -245,7 +245,7 @@ a {
   /* height: 40vh; */
   max-height: 26em;
   /* overflow-x: auto; */
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   white-space: nowrap;
 }
 
@@ -461,6 +461,11 @@ a {
     width: 10rem;
   }
 
+  .carousel-slide img {
+    height: 15em;
+    width: 15em;
+  }
+
   .greeting {
     font-size: 4vw;
   }
@@ -500,7 +505,8 @@ a {
       font-size: 2.6vh;
     }
     .carousel-slide img {
-      width: 30vw;
+      height: 10em;
+      width: 10em;
     }
 
     .nav-menu {
