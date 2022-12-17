@@ -243,8 +243,8 @@ a {
   display: flex;
   width: 100%;
   /* height: 40vh; */
-  max-height: 40em;
-  overflow-x: auto;
+  max-height: 26em;
+  /* overflow-x: auto; */
   overflow-y: hidden;
   white-space: nowrap;
 }
@@ -573,6 +573,5 @@ a {
 } */
 
 .accordion .content-container.active .answer {
-  height: 150px;
+  height: 12em;
 }
-
