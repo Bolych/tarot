@@ -149,11 +149,11 @@ endBtn.addEventListener("click", () => {
 
   setTimeout(function () {
     textAfterQuestion.classList.add("appear");
-  }, 1000);
+  }, 800);
 
   setTimeout(function () {
     window.location.href = "http://google.com";
-  }, 2500);
+  }, 2000);
 });
 
 // carousel
