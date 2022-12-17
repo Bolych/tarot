@@ -19,7 +19,7 @@ hamburger.addEventListener("click", () => {
 
 // closing navbar on clicking outside
 
-document.onclick = function (e) {
+document.onclick = (e) => {
   if (
     (!navMenu.contains(e.target) && !hamburger.contains(e.target)) ||
     close.contains(e.target)
@@ -61,21 +61,21 @@ const shuffleArray = () => {
   }
 };
 
-window.onload = function () {
+window.onload = () => {
   shuffleArray();
 };
 
 let deck = document.querySelector("#deck");
 let result = document.querySelector("#result");
 let table = document.querySelector("#cards");
-let content = document.querySelector(".content");
+let greeting = document.querySelector(".greeting");
+// let content = document.querySelector(".content");
 let message = document.querySelector(".text-after-prediction");
-let pushMessage = document.getElementById("push");
 let hidden;
 let card;
 
 let addingCard = function () {
-  pushMessage.remove();
+  greeting.remove();
   if (cardsValue.length == 15) {
     setTimeout(function () {
       message.classList.toggle("white");
@@ -104,7 +104,7 @@ let numerologyQuestion = document.getElementById("numerology-question");
 let textAfterQuestion = document.getElementById("text-after-question");
 let endConfirmQuestion = document.querySelector(".confirm-end");
 let btnMain = document.getElementById("btn-main");
-
+let numerologyQuestions = document.querySelector(".numerology-questions");
 let numerology = document.getElementById("numerology");
 let numerologyTable = document.getElementById("numerology-table");
 let numerologyTableName = document.getElementById("numerology-table-name");
@@ -119,7 +119,7 @@ function numerologyAppear() {
   message.classList.toggle("white");
   setTimeout(function () {
     numerologyQuestion.classList.toggle("white");
-  }, 700);
+  }, 200);
   setTimeout(function () {
     textAfterQuestion.classList.toggle("white");
   }, 1500);
@@ -128,8 +128,33 @@ function numerologyAppear() {
   }, 2500);
 }
 
-// btnYes.addEventListener("click", numerologyAppear);
+// btns
+
 btnNo.addEventListener("click", numerologyAppear);
+
+const endBtn = document.getElementById("no-end");
+
+endBtn.addEventListener("click", () => {
+  numerologyQuestion.classList.add("hide");
+  textAfterQuestion.classList.add("hide");
+
+  setTimeout(function () {
+    numerologyQuestion.innerText = "Don't want?";
+    textAfterQuestion.innerText = "Ok. Goodbye, my friend";
+  }, 150);
+
+  setTimeout(function () {
+    numerologyQuestion.classList.add("appear");
+  }, 150);
+
+  setTimeout(function () {
+    textAfterQuestion.classList.add("appear");
+  }, 1000);
+
+  setTimeout(function () {
+    window.location.href = "http://google.com";
+  }, 3500);
+});
 
 // carousel
 
@@ -160,3 +185,5 @@ slider.addEventListener("mousemove", (e) => {
   slider.scrollLeft = scrollLeft - walk;
   console.log(walk);
 });
+
+// faq page
